@@ -1,0 +1,49 @@
+QMAKE_DEFAULT_INCDIRS = \
+    /usr/include/c++/6 \
+    /usr/include/c++/6/x86_64-suse-linux \
+    /usr/include/c++/6/backward \
+    /usr/lib64/gcc/x86_64-suse-linux/6/include \
+    /usr/local/include \
+    /usr/lib64/gcc/x86_64-suse-linux/6/include-fixed \
+    /usr/x86_64-suse-linux/include \
+    /usr/include
+QMAKE_DEFAULT_LIBDIRS = \
+    /usr/lib64/gcc/x86_64-suse-linux/6 \
+    /usr/lib64 \
+    /lib64 \
+    /usr/x86_64-suse-linux/lib \
+    /lib \
+    /usr/lib
+QMAKE_CXX.INCDIRS = \
+    /usr/include/c++/6 \
+    /usr/include/c++/6/x86_64-suse-linux \
+    /usr/include/c++/6/backward \
+    /usr/lib64/gcc/x86_64-suse-linux/6/include \
+    /usr/local/include \
+    /usr/lib64/gcc/x86_64-suse-linux/6/include-fixed \
+    /usr/x86_64-suse-linux/include \
+    /usr/include \
+    /usr/include/c++/7.2.1 \
+    /usr/include/c++/7.2.1/x86_64-pc-linux-gnu \
+    /usr/include/c++/7.2.1/backward \
+    /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include \
+    /usr/local/include \
+    /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1/include-fixed \
+    /usr/include
+QMAKE_CXX.LIBDIRS = \
+    /usr/lib64/gcc/x86_64-suse-linux/6 \
+    /usr/lib64 \
+    /lib64 \
+    /usr/x86_64-suse-linux/lib \
+    /lib \
+    /usr/lib \
+    /usr/lib/gcc/x86_64-pc-linux-gnu/7.2.1
+QMAKE_CXX.QT_COMPILER_STDCXX = 201402L
+QMAKE_CXX.QMAKE_GCC_MAJOR_VERSION = 7
+QMAKE_CXX.QMAKE_GCC_MINOR_VERSION = 2
+QMAKE_CXX.QMAKE_GCC_PATCH_VERSION = 1
+QMAKE_CXX.COMPILER_MACROS = \
+    QT_COMPILER_STDCXX \
+    QMAKE_GCC_MAJOR_VERSION \
+    QMAKE_GCC_MINOR_VERSION \
+    QMAKE_GCC_PATCH_VERSION
