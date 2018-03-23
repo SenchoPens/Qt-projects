@@ -4,8 +4,13 @@
 #include <QMainWindow>
 #include <QTimer>
 #include <QList>
-#include "cloud.hpp"
+#include <QDebug>
+
 #include "figure.h"
+#include "pig.hpp"
+#include "cloud.hpp"
+#include "drop.hpp"
+
 #include "ui_mainwindow.h"
 #include "start.hpp"
 
@@ -22,22 +27,39 @@ private:
     uint width;
     uint height;
     uint seconds;
+    uint nDrops;
+
     Ui::MainWindow *ui;
-    Pig *cloud;
+    Start *start;
+
+    Cloud *cloud;
+    Pig *pig;
+    QList<Drop*> *drops;
+    QImage *dropImage;
+
     QTimer *drawTimer;
     QTimer *moveTimer;
     QTimer *secondsTimer;
-    Start *start;
+    QTimer *newDropTimer;
 
+    virtual void keyPressEvent(QKeyEvent *event);
     virtual void paintEvent(QPaintEvent *event);
+
     void startTimers();
     void startMenu();
 
+    void generateFigures();
+    void connectFigures();
+
+    void generateDrop();
+    void connectDrop(Drop *drop);
+
 private slots:
     void endOfGame(QString message);
-    //void moveFigures();
     void increaseSecs();
     void startGame();
+    void moveFigures();
+    void makeDrop();
 };
 
 #endif // MAINWINDOW_HPP

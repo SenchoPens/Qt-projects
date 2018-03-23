@@ -6,8 +6,8 @@
 
 class ControlFigure : public Figure {
     Q_OBJECT
-private:
-    const int moveSpeed = 10;
+protected:
+    int moveSpeed;
 
     int max(int x, int y);
     int min(int x, int y);

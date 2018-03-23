@@ -7,6 +7,7 @@ ControlFigure::ControlFigure(QWidget *parent) : Figure(parent) {
     colorR2 = 255 - colorR;
     colorG2 = 255 - colorG;
     colorB2 = 255 - colorB;
+    moveSpeed = 10;
 }
 
 void ControlFigure::paintEvent(QPaintEvent *event) {

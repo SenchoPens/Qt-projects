@@ -3,24 +3,24 @@
 
 #include <QWidget>
 #include "figure.h"
-#include "controlfigure.hpp"
 
-class Pig : public ControlFigure {
+class Cloud : public Figure {
     Q_OBJECT
+public:
+    explicit Cloud(QWidget *parent = 0);
+
+    virtual void paintEvent(QPaintEvent *);
+
 private:
-    const int moveSpeed = 10;
     virtual void generateXY();
-    QImage *pigImage;
-    QRectF *area;
 
     int sizeX;
     int sizeY;
+    QImage *cloudImage;
 
-public:
-    explicit Pig(QWidget *parent = 0);
+signals:
 
-    virtual void paintEvent(QPaintEvent *);
-    virtual void keyMove(QKeyEvent *event);
+public slots:
 };
 
 #endif // CLOUD_HPP

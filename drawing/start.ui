@@ -18,7 +18,7 @@
     <rect>
      <x>265</x>
      <y>90</y>
-     <width>120</width>
+     <width>151</width>
      <height>31</height>
     </rect>
    </property>
@@ -573,8 +573,6 @@
      <bool>false</bool>
     </property>
    </widget>
-   <zorder>newGameButton</zorder>
-   <zorder>newGameButton</zorder>
   </widget>
  </widget>
  <resources/>
